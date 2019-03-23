@@ -20,6 +20,7 @@ const getConfig = env => {
 module.exports = env => ({
   entry: "./index.jsx",
   output: {
+    path: path.join(__dirname, "build"),
     publicPath: "/"
   },
   devServer: {
@@ -83,8 +84,5 @@ module.exports = env => ({
         to: "static"
       }
     ])
-  ],
-  output: {
-    path: path.join(__dirname, "build")
-  }
+  ]
 });
