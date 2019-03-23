@@ -11,8 +11,11 @@
   "author": "hulkdx",
   "license": "UNLICENSED",
   "dependencies": {
+    "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react": "^16.8.2"
+    "react-router": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -33,7 +36,6 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "prettier": "^1.16.4",
-    "prop-types": "^15.7.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3",
