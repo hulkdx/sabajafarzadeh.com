@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import LoginPage from "./pages/LoginPage";
+import "semantic-ui-css/semantic.min.css";
 
 const Main = () => (
   <BrowserRouter>
-    <Route path="/" exact component={HomePage} />
-    <Route path="/login" exact component={LoginPage} />
+    <div className="ui container">
+      <Route path="/" exact component={HomePage} />
+    </div>
   </BrowserRouter>
 );
 
