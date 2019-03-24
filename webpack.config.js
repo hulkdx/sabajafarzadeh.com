@@ -18,10 +18,9 @@ const getConfig = env => {
 /* eslint-enable */
 
 module.exports = env => ({
-  entry: "./index.jsx",
   output: {
-    path: path.join(__dirname, "build"),
-    publicPath: "/"
+    path: path.join(__dirname, "build")
+    // publicPath: "/"
   },
   devServer: {
     historyApiFallback: true
@@ -49,24 +48,6 @@ module.exports = env => ({
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      },
-      //
-      // For semantic-ui
-      //
-      {
-        test: [/\.eot$/, /\.ttf$/, /\.svg$/, /\.woff$/, /\.woff2$/],
-        loader: require.resolve("file-loader"),
-        options: {
-          name: "static/media/[name].[hash:8].[ext]"
-        }
-      },
-      {
-        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: require.resolve("url-loader"),
-        options: {
-          limit: 10000,
-          name: "static/media/[name].[hash:8].[ext]"
-        }
       }
     ]
   },
@@ -75,8 +56,20 @@ module.exports = env => ({
       "process.env": getConfig(env)
     }),
     new HtmlWebPackPlugin({
-      template: "./index.html",
-      filename: "./index.html"
+      template: path.join(__dirname, "index.html"),
+      filename: "index.html",
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      }
     }),
     new CopyWebpackPlugin([
       {
