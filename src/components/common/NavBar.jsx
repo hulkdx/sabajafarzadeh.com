@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./NavBar.css";
+
 const NavBar = () => (
-  <header>
-    <nav>
+  <header className="navbar-header">
+    <nav className="navbar-container">
       <div>T</div>
-      <div>
-        <Link to="/">THE LOGO</Link>
-      </div>
-      <div>
+      <div className="navbar-logo">Saba Jafarzadeh</div>
+      <div className="navbar-items-container">
         <ul>
           <li>
-            <Link to="/">HomePage</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/about">AboutPage</Link>
+            <Link to="/">Home</Link>
           </li>
         </ul>
       </div>

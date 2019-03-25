@@ -14,8 +14,10 @@ const Main = () => (
     <Provider store={store}>
       <div className="container">
         <NavBar />
-        <Route path="/" exact component={HomePage} />
-        <Route path="/about" component={AboutPage} />
+        <div className="container-main">
+          <Route path="/" exact component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+        </div>
       </div>
     </Provider>
   </BrowserRouter>
