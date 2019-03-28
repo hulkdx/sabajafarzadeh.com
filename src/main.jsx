@@ -7,7 +7,7 @@ import "./main.css";
 import HomePage from "./components/pages/home/HomePage";
 import AboutPage from "./components/pages/about/AboutPage";
 
-import NavBar from "./components/common/NavBar";
+import NavBar from "./components/common/Navbar/Navbar";
 
 const Main = () => (
   <BrowserRouter>
