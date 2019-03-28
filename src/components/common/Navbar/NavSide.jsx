@@ -1,16 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import "./NavSide.css";
 
-const NavSide = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-    </ul>
+import RouteList from "./RouteList";
+
+const NavSide = ({ show, onClickClose }) => (
+  <nav className={show ? "nav-side nav-side-show" : "nav-side nav-side-hidden"}>
+    <button className="nav-side-close-btn" type="button" onClick={onClickClose}>
+      &#x2715;
+    </button>
+    <RouteList />
   </nav>
 );
+
+NavSide.propTypes = {
+  show: PropTypes.bool.isRequired,
+  onClickClose: PropTypes.func.isRequired
+};
 
 export default NavSide;

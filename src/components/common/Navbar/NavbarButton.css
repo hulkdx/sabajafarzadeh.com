@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 .navbar-button:focus {
@@ -15,7 +16,19 @@
 }
 
 .navbar-button-line {
-  width: 30px;
-  height: 2px;
+  height: 1.5px;
   background: white;
+  border-radius: 1px;
+}
+
+.navbar-button-line:nth-of-type(1) {
+  width: 30px;
+}
+
+.navbar-button-line:nth-of-type(2) {
+  width: 20px;
+}
+
+.navbar-button-line:nth-of-type(3) {
+  width: 10px;
 }

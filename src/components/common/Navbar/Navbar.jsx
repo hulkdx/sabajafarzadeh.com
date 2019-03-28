@@ -1,16 +1,19 @@
 import React from "react";
-import { NavLink as Link } from "react-router-dom";
 
 import "./Navbar.css";
 
 import NavBarButton from "./NavbarButton";
+import NavSide from "./NavSide";
+import RouteList from "./RouteList";
 
 const MIN_WIDTH_TO_SHOW_NAV_BAR_BUTTON = 600;
 
 class NavBar extends React.Component {
   state = {
-    showNavBarButton: false
+    showNavBarButton: false,
+    showNavSide: true
   };
+
   //----------
   // Lifecycle
   //----------
@@ -38,37 +41,42 @@ class NavBar extends React.Component {
     });
   };
 
+  onNavSide = open => () => {
+    this.setState({
+      showNavSide: open
+    });
+  };
+
   //----------
   // render
   //----------
 
   render() {
-    const { showNavBarButton } = this.state;
+    const { showNavBarButton, showNavSide } = this.state;
 
     return (
-      <header className="navbar-header">
-        <nav className="navbar-container">
-          <div className="navbar-logo">Saba Jafarzadeh</div>
-          <div className="navbar-items-container">
-            {showNavBarButton ? (
-              <NavBarButton />
-            ) : (
-              <ul>
-                <li>
-                  <Link to="/about" activeClassName="active">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" exact activeClassName="active">
-                    Home
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </div>
-        </nav>
-      </header>
+      <React.Fragment>
+        <div
+          className={
+            showNavSide
+              ? "navbar-shadow navbar-shadow-show"
+              : "navbar-shadow navbar-shadow-hide"
+          }
+        />
+        <header className="navbar-header">
+          <nav className="navbar-container">
+            <div className="navbar-logo">Saba Jafarzadeh</div>
+            <div className="navbar-items-container">
+              {showNavBarButton ? (
+                <NavBarButton onClick={this.onNavSide(true)} />
+              ) : (
+                <RouteList />
+              )}
+            </div>
+          </nav>
+        </header>
+        <NavSide show={showNavSide} onClickClose={this.onNavSide(false)} />
+      </React.Fragment>
     );
   }
 }
