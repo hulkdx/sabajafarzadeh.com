@@ -10,7 +10,7 @@ const NavSide = ({ show, onClickClose }) => (
     <button className="nav-side-close-btn" type="button" onClick={onClickClose}>
       &#x2715;
     </button>
-    <RouteList />
+    <RouteList onClick={onClickClose} />
   </nav>
 );
 

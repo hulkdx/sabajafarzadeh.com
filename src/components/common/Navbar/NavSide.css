@@ -21,10 +21,6 @@
   transform-origin: right;
 }
 
-.nav-side-show .container {
-  background-color: red;
-}
-
 .nav-side-close-btn {
   width: 50px;
   height: 50px;
@@ -40,4 +36,27 @@
 
 .nav-side-close-btn:focus {
   outline: none;
+}
+
+.nav-side ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+  padding: 10%;
+  margin-right: 85px;
+  align-items: center;
+}
+
+.nav-side li {
+  flex: 1;
+  margin: 20px 0px;
+}
+
+.nav-side a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
 }
