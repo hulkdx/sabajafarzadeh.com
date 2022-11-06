@@ -5,13 +5,13 @@ import { NavLink as Link } from "react-router-dom";
 const RouteList = ({ onClick }) => (
   <ul>
     <li>
-      <Link to="/about" activeClassName="active" onClick={onClick}>
-        About
+      <Link to="/" exact activeClassName="active" onClick={onClick}>
+        Home
       </Link>
     </li>
     <li>
-      <Link to="/" exact activeClassName="active" onClick={onClick}>
-        Home
+      <Link to="/about" activeClassName="active" onClick={onClick}>
+        About
       </Link>
     </li>
   </ul>

@@ -1,8 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
 /* eslint-disable */
 const getConfig = env => {
@@ -72,24 +71,9 @@ module.exports = env => ({
         minifyURLs: true
       }
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "static",
-        to: "static"
-      }
-    ]),
-    new UglifyJsPlugin({
-      cache: true,
-      uglifyOptions: {
-        compress: {
-          warnings: false,
-          comparisons: false
-        },
-        output: {
-          comments: false,
-          ascii_only: true
-        }
-      }
-    })
-  ]
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
 });
