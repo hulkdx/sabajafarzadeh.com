@@ -5,3 +5,5 @@ Start the project:
 npm install
 npm start
 ```
+
+TODO: Fix securities: `npm audit`
