@@ -1,5 +1,3 @@
-
 module.exports = {
-  'CONFIG': "'development'",
-}
-
+  CONFIG: "'development'",
+};
