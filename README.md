@@ -1,14 +1,7 @@
-The source code of my website.
+# Saba Jafarzadeh website
 
-# How to start locally:
-
-```sh
-npm install
-npm start
-```
+[Blogs](https://kaleidoscopic-sunshine-b4b1e9.netlify.app/)
 
 ## TODO
 
-- Github action + Netlify
-- Create about section
-- Create first blog
+- Write about me
