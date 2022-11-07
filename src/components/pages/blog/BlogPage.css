@@ -1,0 +1,29 @@
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.blog {
+  width: 50%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.blog h1 {
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+
+.blog p {
+  white-space: pre-line;
+}
+
+.blog-date {
+  margin-bottom: 8px;
+  font-size: x-small;
+}

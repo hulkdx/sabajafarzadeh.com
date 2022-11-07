@@ -5,16 +5,14 @@ import './Navbar.css';
 
 function NavBar() {
   return (
-    <>
-      <div />
-      <header className="navbar-header">
-        <nav className="navbar-container">
-          <div className="navbar-items-container">
-            <RouteList />
-          </div>
-        </nav>
-      </header>
-    </>
+    <header className="navbar-header">
+      <nav className="navbar-container">
+        <div className="navbar-logo">Saba Jafarzadeh</div>
+        <div className="navbar-items-container">
+          <RouteList />
+        </div>
+      </nav>
+    </header>
   );
 }
 

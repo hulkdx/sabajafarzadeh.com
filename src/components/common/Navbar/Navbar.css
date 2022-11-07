@@ -9,7 +9,7 @@
   color: white;
   text-decoration: none;
   font-size: 1.65rem;
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
 }
 
 .navbar-container {
@@ -22,6 +22,7 @@
   display: flex;
   flex: 1;
   justify-content: flex-start;
+  margin-left: 32px;
 }
 
 .navbar-items-container a {
@@ -32,14 +33,13 @@
 }
 
 .navbar-items-container a:after {
-  content: "";
+  content: '';
   display: block;
   margin-top: 2px;
   height: 2px;
   background-color: rgb(150, 150, 150);
   visibility: hidden;
-  transition: transform 0.3s ease-in, visibility 0.3s ease-in,
-    color 0.3s ease-in;
+  transition: transform 0.3s ease-in, visibility 0.3s ease-in, color 0.3s ease-in;
   transform: scaleX(0);
   transform-origin: center center;
 }
