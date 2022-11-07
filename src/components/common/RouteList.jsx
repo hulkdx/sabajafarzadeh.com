@@ -1,28 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { NavLink as Link } from "react-router-dom";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { NavLink as Link } from 'react-router-dom';
 
-const RouteList = ({ onClick }) => (
-  <ul>
-    <li>
-      <Link to="/" exact activeClassName="active" onClick={onClick}>
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link to="/about" activeClassName="active" onClick={onClick}>
-        About
-      </Link>
-    </li>
-  </ul>
-);
+function RouteList({ onClick }) {
+  return (
+    <ul>
+      <li>
+        <Link to="/" exact activeClassName="active" onClick={onClick}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/about" activeClassName="active" onClick={onClick}>
+          About
+        </Link>
+      </li>
+    </ul>
+  );
+}
 
 RouteList.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 RouteList.defaultProps = {
-  onClick: null
+  onClick: null,
 };
 
 export default RouteList;

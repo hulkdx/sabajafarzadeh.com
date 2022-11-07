@@ -1,11 +1,11 @@
-const webpack = require("webpack");
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 /* eslint-disable */
-const getConfig = env => {
-  let configName = "dev";
+const getConfig = (env) => {
+  let configName = 'dev';
 
   if (env.config) {
     configName = env.config;
@@ -13,20 +13,20 @@ const getConfig = env => {
 
   const fullConfigName = `${configName}.env.js`;
 
-  return require(path.join(__dirname, "config", fullConfigName));
+  return require(path.join(__dirname, 'config', fullConfigName));
 };
 /* eslint-enable */
 
-module.exports = env => ({
+module.exports = (env) => ({
   output: {
-    path: path.join(__dirname, "build")
+    path: path.join(__dirname, 'build'),
     // publicPath: "/"
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -34,30 +34,30 @@ module.exports = env => ({
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
-          }
-        ]
+            loader: 'html-loader',
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": getConfig(env)
+      'process.env': getConfig(env),
     }),
     new HtmlWebPackPlugin({
-      template: path.join(__dirname, "index.html"),
-      filename: "index.html",
+      template: path.join(__dirname, 'index.html'),
+      filename: 'index.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -68,8 +68,8 @@ module.exports = env => ({
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true
-      }
+        minifyURLs: true,
+      },
     }),
   ],
   optimization: {
