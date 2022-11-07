@@ -7,12 +7,12 @@ function RouteList({ onClick }) {
     <ul>
       <li>
         <Link to="/" exact activeClassName="active" onClick={onClick}>
-          Home
+          blog
         </Link>
       </li>
       <li>
         <Link to="/about" activeClassName="active" onClick={onClick}>
-          About
+          about
         </Link>
       </li>
     </ul>

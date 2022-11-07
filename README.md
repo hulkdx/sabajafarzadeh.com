@@ -11,5 +11,4 @@ npm start
 
 - Github action + Netlify
 - Create about section
-- Rename Home to blog
 - Create first blog
