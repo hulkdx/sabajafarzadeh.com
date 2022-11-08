@@ -1,0 +1,16 @@
+.about {
+  color: white;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  left: 7%;
+}
+
+.about .header {
+  color: white;
+}
+
+.about h1 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}

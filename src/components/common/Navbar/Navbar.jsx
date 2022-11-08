@@ -7,7 +7,6 @@ function NavBar() {
   return (
     <header className="navbar-header">
       <nav className="navbar-container">
-        <div className="navbar-logo">Saba Jafarzadeh</div>
         <div className="navbar-items-container">
           <RouteList />
         </div>
