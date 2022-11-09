@@ -14,16 +14,14 @@ function AboutPage() {
         <br />
         Specializing in building Android apps, and currently I'm working in Nordea
         <br />
-        <div className="about-main-content">
-          Hobby Projects:
-          <ul>
-            <li>
-              <h4>
-                <a href="https://github.com/hulkdx/FindProfessional">Find Professional</a>
-              </h4>
-            </li>
-          </ul>
-        </div>
+        <p className="about-main-content">
+          Currently I'm working in
+          {' '}
+          <a href="https://github.com/hulkdx/FindProfessional">Find Professional</a>
+          {' '}
+          project, and
+          trying to learn kubernetes.
+        </p>
       </div>
       <AboutIcons name="ant-design:github-filled" />
     </div>
