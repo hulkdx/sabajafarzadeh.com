@@ -21,6 +21,7 @@
 
 .blog p {
   white-space: pre-line;
+  font-size: larger;
 }
 
 .blog-date {
