@@ -1,9 +1,12 @@
+.about-content {
+  display: flex;
+}
+
 .about {
+  flex-direction: column;
+  flex: 1;
+  margin-left: 7%;
   color: white;
-  position: fixed;
-  width: 80%;
-  height: 100px;
-  left: 7%;
 }
 
 .about .header {
@@ -13,4 +16,37 @@
 .about h1 {
   margin-top: 8px;
   margin-bottom: 16px;
+}
+
+.about-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+}
+
+.about-icon {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.linkedin-icon:hover {
+  color: #3171ab;
+}
+
+.github-icon:hover {
+  color: #8700e9;
+}
+
+.about-icon {
+  margin-bottom: 4px;
+}
+
+.about-main-content {
+  margin-top: 16px;
+  font-size: large;
+}
+
+.about-main-content a {
+  color: white;
 }

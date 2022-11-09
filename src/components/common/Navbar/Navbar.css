@@ -66,23 +66,3 @@
 .navbar-items-container li {
   padding-right: 2rem;
 }
-
-.navbar-shadow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  transition: opacity 0.5s ease;
-}
-
-.navbar-shadow-show {
-  opacity: 0.7;
-  z-index: 1;
-}
-
-.navbar-shadow-hide {
-  opacity: 0;
-  z-index: -1;
-}
