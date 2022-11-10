@@ -4,6 +4,11 @@ import React from 'react';
 
 export default [
   {
+    title: 'Go live!',
+    content: <>I go live with sabajafarzadeh.com</>,
+    date: '2022-11-10',
+  },
+  {
     title: 'First blog',
     content: (
       <>
