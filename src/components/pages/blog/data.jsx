@@ -4,15 +4,10 @@ import React from 'react';
 
 export default [
   {
-    title: 'Go live!',
-    content: <>I go live with sabajafarzadeh.com</>,
-    date: '2022-11-10',
-  },
-  {
-    title: 'First blog',
+    title: 'First post',
     content: (
       <>
-        Created my first blog, this website :)
+        sabajafarzadeh.com is live. This webpage is created with reactjs and netlify
         <br />
         <a href="https://github.com/hulkdx/hulkdx_website_frontend">Source code</a>
       </>
