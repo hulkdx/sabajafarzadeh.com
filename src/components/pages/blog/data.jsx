@@ -6,22 +6,23 @@ export default [
     title: 'Find Professional project',
     content: (
       <>
-        I’m trying to develop a project{' '}
-        <a href="https://github.com/hulkdx/FindProfessional">Find Professional</a> that would be an
-        Android and iOS application done with <code>Jetpack compose</code>. I will describe the idea
-        a bit later.
+        Developing <a href="https://github.com/hulkdx/FindProfessional">Find Professional</a>{' '}
+        project. It's Android, iOS app done.
         <br />
         <br />
-        Currently I need some backend service for that project and I’ve decided to use{' '}
-        <code>Spring boot</code> application with <code>Kotlin</code>. And I decided that it is a
-        good time for me to learn <code>kubernetes</code> and trying to deploy it to{' '}
-        <code>aws</code>. I already learned a basic stuff about kubernetes which I{' '}
-        <a href="https://github.com/hulkdx/DocsK8S">documented</a>. I need to know more about{' '}
-        <code>EKS</code> and decided to start learning it with a{' '}
+        The backend service will be done using <code>Spring boot</code> and <code>Kotlin</code>.
+        Currently I'm learning <code>kubernetes</code> to deploy it to <code>aws</code>. I learned a
+        basic kubernetes concepts with techworld with nana (and I highly recommend that). I need to
+        know more about EKS service and decided to start learning it with a{' '}
         <a href="https://udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/">
           udemy course
         </a>
         .
+        <br />
+        <br />
+        <a href="https://github.com/hulkdx/DocsK8S">
+          <b>DocsK8S</b>
+        </a>
       </>
     ),
     date: '2022-11-11',
