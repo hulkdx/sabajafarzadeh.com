@@ -9,8 +9,8 @@
 
 .container-main {
   /* margin-top the size of navbar */
-  margin-top: 100px;
-  height: calc(100vh - 100px);
+  margin-top: 10vh;
+  height: 90vh;
 }
 
 span,

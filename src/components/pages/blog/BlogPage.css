@@ -55,6 +55,10 @@
   text-decoration: none;
 }
 
+.empty-block {
+  margin-top: 50px;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .blog {
     width: 80%;
