@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build node_modules",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && cp netlify/_redirects build/",
     "start": "webpack-dev-server --open --mode development",
     "lint": "node_modules/eslint/bin/eslint.js src --ext .jsx"
   },
