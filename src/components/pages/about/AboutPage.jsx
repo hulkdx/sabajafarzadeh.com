@@ -12,15 +12,14 @@ function AboutPage() {
         <h1>Saba Jafarzadeh</h1>
         I'm a software developer based in Helsinki
         <br />
-        Specializing in building Android apps, and currently I'm working in Nordea
+        Specializing in building Android apps, and working in Nordea
         <br />
         <p className="about-main-content">
           Currently I'm working in
           {' '}
           <a href="https://github.com/hulkdx/FindProfessional">Find Professional</a>
           {' '}
-          project, and
-          trying to learn kubernetes.
+          hobby project in my free time.
         </p>
       </div>
       <AboutIcons name="ant-design:github-filled" />
