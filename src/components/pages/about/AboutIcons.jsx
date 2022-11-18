@@ -4,8 +4,6 @@ import { Icon } from '@iconify/react';
 
 import './AboutPage.css';
 
-const iconSize = 32;
-
 function IC({ className, icon, href }) {
   return (
     <a href={href}>
@@ -30,11 +28,22 @@ function Linkedin() {
   );
 }
 
+function Stackoverflow() {
+  return (
+    <IC
+      className="stackoverflow-icon"
+      icon="simple-icons:stackoverflow"
+      href="https://stackoverflow.com/users/3996989/saba"
+    />
+  );
+}
+
 function AboutIcons() {
   return (
     <div className="about-icons">
       <GitHub />
       <Linkedin />
+      <Stackoverflow />
     </div>
   );
 }

@@ -38,6 +38,10 @@
   color: #8700e9;
 }
 
+.stackoverflow-icon:hover {
+  color: #f48023;
+}
+
 .about-icon {
   margin-bottom: 4px;
 }
