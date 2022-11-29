@@ -3,6 +3,38 @@ import React from 'react';
 
 export default [
   {
+    title: 'eks',
+    content: (
+      <>
+        <h2 id="learning">Learning</h2>
+        <p>
+          I’ve learned the basics about eks and deployed using iac with terraform.{' '}
+          <a href="https://github.com/hulkdx/FindProfessionalInfra">Source code </a>
+          is on a public repository now but this can be changed.
+        </p>
+        <p>
+          The complexity of eks is too much but I had to learn other related aws services such as
+          vpc, and I documented all of them in{' '}
+          <a href="https://github.com/hulkdx/DocsK8S/tree/main/aws">here</a>. The issue is also many
+          tutorial about eks is outdated and just simply wrong but are good for a beginner like me.
+        </p>
+        <h2 id="infra-cost-optimization">Infra cost optimization</h2>
+        <p>
+          The infra cost of should be around $80 per month. I have not used
+          <code>RDS</code> and node groups are public now to save monthly cost of the cluster and
+          I’ll use heruku postgres for the database which is free until this project grows.
+        </p>
+        <h2 id="future-dev">Future development</h2>
+        <p>
+          I need to study next on how to structure the codebase/repositories. Should it be that
+          microservices in a separate repositories and infra code in a separate repositories?
+        </p>
+        <br />
+      </>
+    ),
+    date: '2022-11-29',
+  },
+  {
     title: 'Find Professional project',
     content: (
       <>
