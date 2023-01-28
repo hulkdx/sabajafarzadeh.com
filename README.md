@@ -8,3 +8,9 @@
 - Create a temp Markdown file
 - Use [pandoc temp.md](https://pandoc.org/)
 - Copy the content to [data.jsx](./src/components/pages/blog/data.jsx)
+
+## TODO
+
+- Add my picture
+- Add contact info section and create a email for it
+- Add a donate section (target countries outside of Finland)
