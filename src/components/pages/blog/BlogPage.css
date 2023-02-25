@@ -7,10 +7,11 @@
 }
 
 .blog {
-  width: 50%;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 75%;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-bottom: 16px;
+  padding-bottom: 24px;
   border-radius: 8px;
   background-color: white;
 }

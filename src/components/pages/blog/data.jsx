@@ -3,6 +3,11 @@ import React from 'react';
 
 export default [
   {
+    title: '',
+    content: `Most important thing is you got to get rid of doubt. if you got doubt of what you doing, its not gonna work. And a way to do that is you have a plan. you have a step-by-step list of things to do to get to your goal if you don't have that it's very hard to really have faith in what you doing, as soon as something pop up it looks like the end but if you got a game plan of everything you need to do, you know one thing pop up will I still got to do: this this and this and another thing pop up I accomplished this two things, that says my last obstacle only got three more things to do let me keep pushing, pretty soon you'll attain your goal and then you create another one but without the game plan without a strong sense of faith in what you've doing it's going to be real hard to accomplish anything `,
+    date: '2023-2-25',
+  },
+  {
     title: 'Terraform module',
     content: `The reason behind creating a terraform modules is to hide the complexity of creating some of the services, for instance to create a vpc with igw and nat, you need the following code without the modules, you need to create a lot of terraform resources, but with the module it can be just couple lines of code.
 
