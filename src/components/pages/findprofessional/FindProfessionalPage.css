@@ -1,0 +1,48 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+  overflow: auto;
+  background-color: white;
+}
+
+.header-introduction {
+  padding-top: 1px;
+  padding-left: 64px;
+  padding-right: 64px;
+  flex: 1;
+}
+
+.header-introduction-title {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  font-family: Georgia;
+  font-weight: bold;
+  /* padding-left: 32px; */
+  color: black;
+  margin-bottom: 0;
+}
+
+.header-introduction-subtitle {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia;
+  font-weight: bold;
+  /* padding-left: 32px; */
+  color: #2f5496;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.header-introduction-content {
+  font-size: larger;
+}
+
+.under-dev {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}

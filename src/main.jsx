@@ -19,7 +19,7 @@ function Main() {
           <div className="container-main">
             <Route path="/" exact component={BlogPage} />
             <Route path="/about" component={AboutPage} />
-            <Route path="/ff" component={FindProfessionalPage} />
+            <Route path="/findprofessional" component={FindProfessionalPage} />
           </div>
         </div>
       </Provider>

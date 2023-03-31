@@ -6,7 +6,7 @@ function RouteListLeft({ onClick }) {
   return (
     <ul>
       <li>
-        <Link to="/ff" activeClassName="active" onClick={onClick}>
+        <Link to="/findprofessional" activeClassName="active" onClick={onClick}>
           Find Professional
         </Link>
       </li>
