@@ -27,7 +27,7 @@ export default [
         <p>
           The complexity of eks is too much but I had to learn other related aws services such as
           vpc, and I documented all of them in{' '}
-          <a href="https://github.com/hulkdx/DocsK8S/tree/main/aws">here</a>. The issue is also many
+          <a href="https://github.com/hulkdx/DocsK8S/tree/main/aws">kubernetes aws documents</a>. The issue is also many
           tutorial about eks is outdated and just simply wrong but are good for a beginner like me.
         </p>
         <h2 id="infra-cost-optimization">Infra cost optimization</h2>
