@@ -1,11 +1,13 @@
 .about-content {
   display: flex;
+  align-items: center;
+  padding-top: 64px;
 }
 
 .about {
   flex-direction: column;
   flex: 1;
-  margin-left: 7%;
+  margin-left: 15%;
   color: white;
 }
 
@@ -21,7 +23,7 @@
 .about-icons {
   display: flex;
   flex-direction: column;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 .about-icon {
