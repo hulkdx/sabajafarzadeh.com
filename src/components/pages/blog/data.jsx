@@ -3,9 +3,21 @@ import React from 'react';
 
 export default [
   {
-    title: '',
-    content: `Most important thing is you got to get rid of doubt. if you got doubt of what you doing, its not gonna work. And a way to do that is you have a plan. you have a step-by-step list of things to do to get to your goal if you don't have that it's very hard to really have faith in what you doing, as soon as something pop up it looks like the end but if you got a game plan of everything you need to do, you know one thing pop up will I still got to do: this this and this and another thing pop up I accomplished this two things, that says my last obstacle only got three more things to do let me keep pushing, pretty soon you'll attain your goal and then you create another one but without the game plan without a strong sense of faith in what you've doing it's going to be real hard to accomplish anything `,
-    date: '2023-2-25',
+    title: 'Go microsevice',
+    content: <p>Write down a new Microservice for FindProfessional project with go
+    language. The microservice should response a list of professionals and
+    the plan is to learn go with writing this microservice. But before that
+    I need to learn more about go. I’m documenting my learnings on <a
+    href="https://github.com/hulkdx/docs-golang">here</a>. I’m following
+    <a href="https://quii.gitbook.io/learn-go-with-tests/"> learn go with
+    tests</a> to learn more about go. I recently finished reading <a
+    href="https://quii.gitbook.io/learn-go-with-tests/testing-fundamentals/scaling-acceptance-tests">scaling
+    acceptance tests</a> and perhaps is a good way of writing a good go
+    microservice but it seems like a complicated code structure, I like test
+    codes to be seperated from the sources but that code structure don’t
+    follow that. I need to research other architectures too.</p>
+    ,
+    date: '2023-4-16',
   },
   {
     title: 'Terraform module',
