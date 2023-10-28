@@ -3,6 +3,32 @@ import React from 'react';
 
 export default [
   {
+    title: 'Find Proffessional design progress',
+    content: (
+      <>
+      <p>
+        I bought ui/ux designs online for the find professional project and made some changes to
+        them. Designing was a bit difficult for me but I'm trying to make a first prototype. Here
+        are the initial prototype of the app designs.
+      </p>
+      <img src="images/screenshot1.png" width="300"></img>
+      &nbsp;
+      &nbsp;
+      <img src="images/screenshot2.png" width="300"></img>
+      <p>
+        This is the initial desing and most likely will change in the future. Currently I also
+        contacted another designer and most likely we will work together. I'm waiting for the 
+        design he sends me, so I can continue this project 
+      </p>
+      <p>
+        Here is the <a href="https://www.figma.com/file/59wAYmh2zv94mUeA7udBzc/Login-Screen?node-id=0%3A1">Figma link</a>.
+      </p>
+      </>
+    )
+    ,
+    date: '2023-10-28',
+  },
+  {
     title: 'Go microsevice',
     content: <p>Write down a new Microservice for FindProfessional project with go
     language. The microservice should response a list of professionals and
