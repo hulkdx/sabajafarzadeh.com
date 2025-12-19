@@ -27,7 +27,7 @@ export default [
           <li>Showing professional schedule (Not very important, I might do this
             much later)</li>
           <li>My initial idea was to build this for coaches but now I'm thinking
-            this can be done for many other areas and I would like to reseach those
+            this can be done for many other areas and I would like to research those
             areas too.</li>
         </ul>
 
