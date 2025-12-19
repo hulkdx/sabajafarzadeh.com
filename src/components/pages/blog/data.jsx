@@ -3,6 +3,50 @@ import React from 'react';
 
 export default [
   {
+    title: 'Find Professional — Progress update (2025-12-19)',
+    content: (
+      <>
+        <p>I’m continuing development of <strong>Find Professional</strong>, my
+          Kotlin Multiplatform app that connects clients with coaches for paid 1:1
+          sessions.
+          <br />
+          The project is almost ready so otherpart of it needs to be 
+          researched including what target group marketing it needs to be done.
+        </p>
+        <h2 id="whats-working-now">What’s working now</h2>
+        <ul>
+          <li>Updated designs</li>
+          <li>Client and professional onboarding flows</li>
+          <li>Browsing professionals + viewing a profile</li>
+          <li>Booking/request UI (scheduling is still in progress), using Stripe
+            as payment method</li>
+        </ul>
+        <h2 id="what-im-building-next">What I’m building next</h2>
+        <ul>
+          <li>Finding a way for paying coaches</li>
+          <li>Showing professional schedule (Not very important, I might do this
+            much later)</li>
+          <li>My initial idea was to build this for coaches but now I'm thinking
+            this can be done for many other areas and I would like to reseach those
+            areas too.</li>
+        </ul>
+
+        <h2 id="what-im-building-next">Screenshots:</h2>
+        <p align="center">
+          <img src="images/screenshot3.png" width="300" class="center-img"></img>
+          &nbsp;
+          &nbsp;
+          <img src="images/screenshot4.png" width="300" class="center-img"></img>
+          &nbsp;
+          &nbsp;
+          <img src="images/screenshot5.png" width="300" class="center-img"></img>
+        </p>
+      </>
+    )
+    ,
+    date: '2025-12-19',
+  },
+  {
     title: 'Find Proffessional design progress',
     content: (
       <>
