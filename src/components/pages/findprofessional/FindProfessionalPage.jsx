@@ -1,35 +1,124 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable max-len */
 import React from 'react';
 
 import './FindProfessionalPage.css';
 
 function FindProfessionalPage() {
   return (
-    <div className="page-content">
-      <div className="header-introduction">
-        <h1 className="header-introduction-title">Find Professional</h1>
-        <h1 className="header-introduction-subtitle">The App That Connects You With Coaches</h1>
-        <div className="header-introduction-content">
-          <div className="under-dev">🚧 Under development 🚧</div>
-          <p>Do you need help finding the right coach to help you achieve your goals? Have you been looking for a way to get personalized coaching from professionals in your field? Look no further than Find Professional, the app that connects you with coaches who can help you reach your full potential.</p>
-          <p>With Find Professional, you can easily find coaches who specialize in the areas you need help with. Whether you're looking for a programming coach or someone to help you with your fitness goals, we've got you covered. Our app features a simple, easy-to-use interface that lets you browse coaches, view their profiles, and connect with them directly.</p>
-          <p>One of the unique features of Find Professional is the ability to schedule one-on-one sessions with your coach. These sessions are paid, so you know that your coach is committed to helping you achieve your goals. Whether you need help with a specific project or want general guidance, our coaches are here to help.</p>
-          <p>But Find Professional isn't just for individuals looking for coaching. Our app is also an excellent resource for professionals looking to make some extra money. By answering questions from our users, professionals can earn money for their expertise. It's a win-win situation - our users get the help they need, and professionals get paid for their knowledge.</p>
-          {/* <p>So what are you waiting for? Download Find Professional today and connect with coaches who can help you achieve your goals. Our app is available on both iOS and Android, so no matter what device you use, you can start benefiting from personalized coaching right away.</p> */}
-          <p>
-            At Find Professional, everyone deserves the chance to reach their full potential. With our app, you can get the coaching you need to take your skills to the next level. Whether you want to improve your programming skills, get in shape, or want guidance on your career path, our coaches are here to help.
-            {/* Download Find Professional today and start your journey toward success! */}
-          </p>
+    <div className="page-content find-professional-page">
+      <section className="fp-hero" id="waitlist">
+        <div className="fp-hero-inner">
+          <div className="fp-hero-copy">
+            <div className="fp-tag">Pre-release • Early access</div>
+            <h1>Find the Right Life Coach to Help You Thrive</h1>
+            <p>
+              Book a 1:1 session with a coach who fits your goals, clarity, habits, confidence
+            </p>
+            <div className="fp-hero-actions">
+              <a className="fp-btn fp-btn-primary" href='https://forms.gle/6DdL9TCzPmQSmcPx9'>
+                Join Waitlist
+              </a>
+            </div>
+
+            <div className="fp-hero-note">
+              Launching soon — join the waitlist for early access.
+            </div>
+
+            <div className="fp-feature-card">
+              <div className="fp-feature">
+                <div className="fp-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 2a8 8 0 1 0 5.293 14.293l4.207 4.207 1.414-1.414-4.207-4.207A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Find the right coach</h3>
+                  <p>Browse profiles and read reviews to find the perfect coach for you.</p>
+                </div>
+              </div>
+              <div className="fp-feature">
+                <div className="fp-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 2h2v2h6V2h2v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3V2zm13 8H4v10h16V10zM4 8h16V6H4v2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Book Sessions Easily</h3>
+                  <p>Schedule one-on-one sessions with your coach in just a few taps.</p>
+                </div>
+              </div>
+              <div className="fp-feature">
+                <div className="fp-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2 4 5v6c0 5.25 3.438 9.984 8 11 4.562-1.016 8-5.75 8-11V5l-8-3zm0 2.18 6 2.25v4.57c0 4.07-2.55 7.87-6 8.99-3.45-1.12-6-4.92-6-8.99V6.43l6-2.25z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Pay Securely</h3>
+                  <p>Convenient and secure payment processing right through the app.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fp-hero-visual" aria-hidden="true">
+            <div className="fp-phone">
+              <div className="fp-phone-notch" />
+              <img
+                className="fp-phone-img"
+                src="/images/app-screenshot.png"
+                alt="Find Professional app screenshot"
+                loading="lazy"
+              />
+            </div>
+            <div className="fp-demo-note">Demo UI - sample home page</div>
+            <div className="fp-shadow" />
+          </div>
         </div>
-      </div>
-      <div className="source">
-        <div className="source-title">an open source project</div>
-        <a className="source-element" href="https://github.com/hulkdx/findprofessional-frontend-mobile">frontend - mobile</a>
-        <a className="source-element" href="https://github.com/hulkdx/findprofessional-backend-user">backend - user service</a>
-        <a className="source-element" href="https://github.com/hulkdx/findprofessional-backend-pro">backend - professional service</a>
-        <a className="source-element" href="https://github.com/hulkdx/findprofessional-infra">infra - aws</a>
-      </div>
+      </section>
+
+      <section className="fp-steps">
+        <h2>How Find Professional Works</h2>
+        <div className="fp-steps-grid">
+          <div className="fp-step">
+            <div className="fp-step-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 2a8 8 0 1 0 5.293 14.293l4.207 4.207 1.414-1.414-4.207-4.207A8 8 0 0 0 10 2z" />
+              </svg>
+            </div>
+            <h3>Browse Coaches</h3>
+            <p>Explore coach profiles life coaches and read reviews.</p>
+          </div>
+          <div className="fp-step">
+            <div className="fp-step-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h2v2h6V2h2v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3V2zm13 8H4v10h16V10z" />
+              </svg>
+            </div>
+            <h3>Book a Session</h3>
+            <p>Choose a coach, select a time, and book your session.</p>
+          </div>
+          <div className="fp-step">
+            <div className="fp-step-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16v14H4zM2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H8V2H6v2H4a2 2 0 0 0-2 2zm6 7h8v2H8v-2z" />
+              </svg>
+            </div>
+            <h3>Achieve Your Goals</h3>
+            <p>Meet with your coach via video and grow with a plan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="fp-cta" id="coach">
+        <h2>Are You a Life Coach?</h2>
+        <p>Earn money and help others by offering your expertise on Find Professional.</p>
+        <a className="fp-btn fp-btn-primary" href="https://forms.gle/7ttD2GwTZovrBpPq8">Become a Coach</a>
+      </section>
+
+      <footer className="fp-footer">
+        <a href="https://github.com/hulkdx/findprofessional-frontend-mobile">iOS &amp; Android App</a>
+        <a href="https://github.com/hulkdx/findprofessional-backend-user">Backend Code</a>
+        <a href="https://github.com/hulkdx/findprofessional-infra">AWS Infrastructure</a>
+      </footer>
     </div>
   );
 }
