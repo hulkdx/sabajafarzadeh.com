@@ -287,9 +287,6 @@
     max-width: none;
   }
 
-  .fp-hero-visual {
-    order: -1;
-  }
 }
 
 @media (max-width: 720px) {
@@ -321,9 +318,6 @@
     grid-template-columns: 1fr;
   }
 
-    .fp-hero-visual {
-      order: -1;
-    }
 }
 
 .fp-phone-notch {
