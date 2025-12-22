@@ -4,7 +4,7 @@ import './FindProfessionalPage.css';
 
 function FindProfessionalPage() {
   return (
-    <div className="page-content find-professional-page">
+    <div className="find-professional-page">
       <section className="fp-hero" id="waitlist">
         <div className="fp-hero-inner">
           <div className="fp-hero-copy">

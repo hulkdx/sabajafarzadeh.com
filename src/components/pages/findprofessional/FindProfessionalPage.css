@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
 
-.page-content.find-professional-page {
+.find-professional-page {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -114,7 +114,7 @@
   align-items: start;
 }
 
-.fp-feature + .fp-feature {
+.fp-feature+.fp-feature {
   margin-top: 18px;
 }
 
@@ -271,6 +271,7 @@
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -292,9 +293,25 @@
 }
 
 @media (max-width: 720px) {
-  .fp-hero {
-    padding: 52px 16px 32px;
+  html body {
+    /* max-width: 100%; */
+    overflow-x: hidden;
   }
+
+  .fp-hero {
+    padding: 52px 0px 32px;
+  }
+
+  .fp-cta {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .fp-hero-copy {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
 
   .fp-hero-copy h1 {
     font-size: 30px;
@@ -304,10 +321,9 @@
     grid-template-columns: 1fr;
   }
 
-  .fp-hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .fp-hero-visual {
+      order: -1;
+    }
 }
 
 .fp-phone-notch {
