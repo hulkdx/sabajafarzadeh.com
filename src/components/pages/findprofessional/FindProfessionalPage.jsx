@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import './FindProfessionalPage.css';
 
 function FindProfessionalPage() {
+  const [openSourceOpen, setOpenSourceOpen] = useState(false);
+  const openSourceRef = useRef(null);
+
+  useEffect(() => {
+    function onDocMouseDown(e) {
+      if (!openSourceRef.current) return;
+      if (!openSourceRef.current.contains(e.target)) {
+        setOpenSourceOpen(false);
+      }
+    }
+
+    function onKeyDown(e) {
+      if (e.key === 'Escape') setOpenSourceOpen(false);
+    }
+
+    document.addEventListener('mousedown', onDocMouseDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', onDocMouseDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, []);
+
   return (
     <div className="find-professional-page">
       <section className="fp-hero" id="waitlist">
@@ -115,9 +138,60 @@ function FindProfessionalPage() {
       </section>
 
       <footer className="fp-footer">
-        <a href="https://github.com/hulkdx/findprofessional-frontend-mobile">iOS &amp; Android App</a>
-        <a href="https://github.com/hulkdx/findprofessional-backend-user">Backend Code</a>
-        <a href="https://github.com/hulkdx/findprofessional-infra">AWS Infrastructure</a>
+        <div className="fp-footer-open-source" ref={openSourceRef}>
+          <button
+            type="button"
+            className="fp-footer-link fp-footer-button"
+            onClick={() => setOpenSourceOpen((v) => !v)}
+            aria-haspopup="menu"
+            aria-expanded={openSourceOpen}
+          >
+            Open Source Project
+          </button>
+
+          {openSourceOpen && (
+            <div className="fp-footer-popover" role="menu">
+              <a
+                role="menuitem"
+                href="https://github.com/hulkdx/findprofessional-frontend-mobile"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpenSourceOpen(false)}
+              >
+                Kotlin Moltiplatform (iOS/Android)
+              </a>
+              <a
+                role="menuitem"
+                href="https://github.com/hulkdx/findprofessional-backend-user"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpenSourceOpen(false)}
+              >
+                Backend Code - User
+              </a>
+              <a
+                role="menuitem"
+                href="https://github.com/hulkdx/findprofessional-backend-pro"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpenSourceOpen(false)}
+              >
+                Backend Code - Pro
+              </a>
+              <a
+                role="menuitem"
+                href="https://github.com/hulkdx/findprofessional-infra"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpenSourceOpen(false)}
+              >
+                Infra
+              </a>
+            </div>
+          )}
+        </div>
+
+        <a className='fp-footer-support' href="mailto:findprofessionalhelp@gmail.com">Support</a>
       </footer>
     </div>
   );
