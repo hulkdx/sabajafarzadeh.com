@@ -7,13 +7,11 @@ function NavBar() {
     <header className="navbar-header">
       <nav className="navbar-container">
         <div className="navbar-inner">
-          {/* Left: Brand */}
-          <Link to="/findprofessional" className="navbar-brand">
+          <a to="/findprofessional" className="navbar-brand" href='https://findprofessionalapp.com/'>
             <span className="navbar-logo-badge" aria-hidden="true" />
             <span>Find Professional</span>
-          </Link>
+          </a>
 
-          {/* Right: Links */}
           <ul className="navbar-links">
             <li>
               <Link to="/" exact activeClassName="active">
