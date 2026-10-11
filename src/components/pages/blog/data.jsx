@@ -3,6 +3,36 @@ import React from 'react';
 
 export default [
   {
+    title: 'I’m stopping Find Professional',
+    content: (
+      <>
+        <p>I’ve decided to stop working on Find Professional.</p>
+
+        <p>
+          I started it because I wanted to make it easier for people to find and book a coach. I
+          spent a lot of time building the app and its booking flow, but I never managed to prove
+          that people would use it.
+        </p>
+
+        <p>
+          I reached out to coaches and heard back from just one. I still had no customer bookings.
+          I couldn’t answer the basic question: would coaches join, and would clients book?
+        </p>
+
+        <p>
+          For a while, I kept going because I’d already put so much work into it. But I’d been stuck
+          for months, and adding more features wasn’t going to solve the main problem.
+        </p>
+
+        <p>
+          So I’m moving on to something else. I’m glad I built Find Professional and learned from it,
+          but I’ve decided it’s time to close this project.
+        </p>
+      </>
+    ),
+    date: '2026-10-11',
+  },
+  {
     title: 'Find Professional — Progress update (2025-12-19)',
     content: (
       <>
