@@ -4,8 +4,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 /* eslint-disable */
-const getConfig = (env) => {
-  let configName = 'dev';
+const getConfig = (env = {}) => {
+  let configName = 'prod';
 
   if (env.config) {
     configName = env.config;
@@ -17,7 +17,7 @@ const getConfig = (env) => {
 };
 /* eslint-enable */
 
-module.exports = (env) => ({
+module.exports = (env = {}) => ({
   output: {
     path: path.join(__dirname, 'build'),
     // publicPath: "/"
