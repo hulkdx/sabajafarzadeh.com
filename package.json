@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf build node_modules",
     "build": "webpack --mode production && cp netlify/_redirects build/ && cp robots.txt build/ && cp -r public/* build/",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --open --mode development --env config=dev",
     "lint": "node_modules/eslint/bin/eslint.js src --ext .jsx"
   },
   "author": "hulkdx",
